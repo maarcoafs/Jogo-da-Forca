@@ -1,26 +1,33 @@
 import os
 
-def limparTela():
+def limpaTela() :
     os.system("cls")
-    
-def lerTexto(mensagemEntrada):
-    valor = input(mensagemEntrada)
-    return valor
 
-def numeroLetras(palavra):
-    valor = len(palavra)
-    caracteres = valor * "*"
-    return caracteres
+def jogadores(desafiante, competidor) :
+    nomesParticipantes = []
+    nomesParticipantes.append(desafiante)
+    nomesParticipantes.append(competidor)
+    return nomesParticipantes
 
-def opcao(dica):
-    while True:
-        print("(1) Jogar")
-        print("(2) Solicitar dica")
-        op = input("Escolha uma opção: ")
-        if op == "1":
-            break
-        elif op == "2":
-            print(dica)
-        else:
-            print("Opção inválida")
-    return
+def dicas(dica1, dica2, dica3):
+    dicas = []
+    dicas.append(dica1)
+    dicas.append(dica2)
+    dicas.append(dica3)
+    return dicas
+
+def relatorio(desafiante, competidor, palavraChave, vencedor):
+    arquivo = open ("relatorio.txt", "a")
+    if vencedor == competidor:
+        arquivo.write (f"Vencedor: {competidor} Perdedor: {desafiante} Palavra Chave: {palavraChave}")
+        arquivo.write ('n/')
+    else:
+        arquivo.write (f"Vencedor: {desafiante} Perdedor: {competidor} Palavra Chave: {palavraChave}")
+        arquivo.write ("\n")
+    arquivo.close
+
+def verRelatorio () :
+    arquivo = open ("relatorio.txt", "r")
+    texto = arquivo.readlines ()
+    arquivo.close()
+    return texto
