@@ -1,0 +1,14 @@
+Vencedor: Vero
+Perdedor: Pedro
+Palavra Chave: casa
+Vencedor: Marco
+Perdedor: Fran
+Palavra Chave: arvore
+Vencedor: Fran
+Perdedor: Vero
+Palavra Chave: carro
+
+Vencedor: Paulo
+Perdedor: Marta
+Palavra Chave: cadeira
+

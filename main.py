@@ -2,6 +2,8 @@ import funcoes
 
 funcoes.limpaTela()
 
+print("JOGO DA FORCA\n")
+
 while True:
     desafiante = input("Desafiante: ")
     competidor = input("Competidor: ")
