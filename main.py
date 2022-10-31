@@ -3,6 +3,7 @@ import funcoes
 funcoes.limpaTela()
 
 print("JOGO DA FORCA\n")
+print("Alunos: Marco Antonio Flores da Silva e Pedro Luan Rodrigues\n")
 
 while True:
     desafiante = input("Desafiante: ")
@@ -30,24 +31,20 @@ while True:
     vencedor = []
 
     while True:
-        print("\n(1) Para começar o jogo.")
-        print("(2) Para ver as dicas (",len(dicas),"disponíveis)")
-        print("(0) Para sair.")
-        print("Erro:" , erros)
+        print("\n")
+        print("(1) Jogar")
+        print("(2) Solicitar dica (",len(dicas),"disponíveis).")
+        print("Erro: " , erros)
+        
         opcao = input()
-
         if opcao == "1":
-            letra = input("Digite uma letra ou tente acertar a palavra: ")
+            letra = input("Digite uma letra: ")
             if letra in tentativas:
                 print("Você já tentou essa letra anteriormente.")
             elif letra not in palavraChave:
                 print("Esse letra não pertence a palavra.")
                 tentativas.append(letra)
                 erros += 1 
-            elif letra == palavraChave:
-                print("Parabéns! Você acertou!")
-                vencedor = competidor
-                break
             else:
                 print("Você acertou uma letra!")
                 acertos.append(letra)
@@ -68,22 +65,21 @@ while True:
                 del dicas[0]
             except:
                 print("Suas dicas acabaram!")
-        elif opcao == "0":
-            break
         else:
             print("Opção inválida!")
         
         if erros >= 5:
             print("Que pena! Você perdeu!")
             break
+        
     funcoes.relatorio(desafiante, competidor, palavraChave, vencedor)
     texto = funcoes.verRelatorio()
     for i in texto:
         texto = i.strip('\n')
         print(texto)
 
-    print("\n(1) Para sair")
-    print("(2) Para jogar novamente")
+    print("\n(1) Sair.")
+    print("(2) Jogar novamente.")
     opcao2 = input()
     if opcao2 == "1":
         break

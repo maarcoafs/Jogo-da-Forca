@@ -19,10 +19,10 @@ def dicas(dica1, dica2, dica3):
 def relatorio(desafiante, competidor, palavraChave, vencedor):
     arquivo = open ("relatorio.txt", "a")
     if vencedor == competidor:
-        arquivo.write (f"Vencedor: {competidor}\nPerdedor: {desafiante}\nPalavra Chave: {palavraChave}\n")
+        arquivo.write (f"Vencedor: {competidor}, Perdedor: {desafiante}, Palavra Chave: {palavraChave}\n")
         arquivo.write ("\n")
     else:
-        arquivo.write (f"Vencedor: {desafiante}\nPerdedor: {competidor}\nPalavra Chave: {palavraChave}\n")
+        arquivo.write (f"Vencedor: {desafiante}, Perdedor: {competidor}, Palavra Chave: {palavraChave}\n")
         arquivo.write ("\n")
     arquivo.close
 

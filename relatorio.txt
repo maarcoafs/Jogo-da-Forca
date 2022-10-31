@@ -1,0 +1,6 @@
+Vencedor: Pedro, Perdedor: Marco, Palavra Chave: casa
+
+Vencedor: Marco, Perdedor: Pedro, Palavra Chave: carro
+
+Vencedor: Marco, Perdedor: Pedro, Palavra Chave: sofa
+
