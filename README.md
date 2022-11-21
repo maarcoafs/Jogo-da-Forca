@@ -1,8 +1,8 @@
 # Jogo-da-Forca
 
-##Projeto desenvolvido para a disciplina de Fundamentos de Programação na ATITUS.
+## Projeto desenvolvido para a disciplina de Fundamentos de Programação na ATITUS.
 
-Desenvolvido por: 
+### Desenvolvido por: 
 
 Marco Antonio Flores da Silva RA: 1132018
 
