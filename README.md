@@ -1,6 +1,6 @@
 # Jogo-da-Forca
 
-Projeto desenvolvido para a disciplina de Fundamentos de Programação na ATITUS.
+##Projeto desenvolvido para a disciplina de Fundamentos de Programação na ATITUS.
 
 Desenvolvido por: 
 
